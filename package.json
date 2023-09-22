@@ -1,0 +1,20 @@
+{
+  "name": "playwright-bun",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "bunx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "bun-types": "latest",
+    "dotenv": "^16.3.1",
+    "playwright": "^1.38.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    
+  }
+}
