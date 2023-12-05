@@ -1,0 +1,13 @@
+name : playwright_workflow_dispatch
+on : [workflow_dispatch]
+jobs:
+  playwright_workflow_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bunx playwright install
+      - run: bun run test
